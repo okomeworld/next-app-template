@@ -5,7 +5,8 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "type-check": "tsc"
+    "type-check": "tsc",
+    "test": "jest"
   },
   "dependencies": {
     "next": "latest",
@@ -27,6 +28,7 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-react": "^7.20.0",
     "eslint-plugin-standard": "^4.0.1",
+    "jest": "^26.0.1",
     "prettier": "^2.0.5",
     "typescript": "3.7.3"
   },
