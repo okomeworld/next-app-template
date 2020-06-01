@@ -1,10 +1,16 @@
 import * as React from 'react';
 import Link from 'next/link';
 import Head from 'next/head';
+import styled from '@emotion/styled';
+import tw from 'twin.macro';
 
 type Props = {
   title?: string;
 };
+
+const Header = styled.header`
+  ${tw`flex items-center justify-between flex-wrap bg-teal-500 p-6`}
+`;
 
 const Layout: React.FunctionComponent<Props> = ({
   children,
@@ -16,22 +22,25 @@ const Layout: React.FunctionComponent<Props> = ({
       <meta charSet="utf-8" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     </Head>
-    <header>
-      <nav>
+    <Header>
+      <nav tw="w-full block flex-grow">
         <Link href="/">
-          <a>Home</a>
-        </Link>{' '}
-        |{' '}
+          <a tw="block mt-4 text-teal-200 hover:text-white mr-4">Home</a>
+        </Link>
         <Link href="/about">
-          <a>About</a>
-        </Link>{' '}
-        |{' '}
+          <a tw="block mt-4 text-teal-200 hover:text-white mr-4">About</a>
+        </Link>
         <Link href="/users">
-          <a>Users List</a>
-        </Link>{' '}
-        | <a href="/api/users">Users API</a>
+          <a tw="block mt-4 text-teal-200 hover:text-white mr-4">Users List</a>
+        </Link>
+        <a
+          tw="block mt-4 text-teal-200 hover:text-white mr-4"
+          href="/api/users"
+        >
+          Users API
+        </a>
       </nav>
-    </header>
+    </Header>
     {children}
     <footer>
       <hr />
