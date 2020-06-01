@@ -24,7 +24,16 @@
         "react",
         "@typescript-eslint"
     ],
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
+    },
     "rules": {
+        "react/prop-types": "off",
+        "react/react-in-jsx-scope": "off",
+        "react/no-unescaped-entities": "off",
+        "@typescript-eslint/no-unused-vars": "error",
         "prettier/prettier": [
             "error",
             {
