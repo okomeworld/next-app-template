@@ -36,6 +36,7 @@
     "jest": "^26.0.1",
     "prettier": "^2.0.5",
     "tailwindcss": "^1.4.6",
+    "ts-jest": "^26.1.1",
     "twin.macro": "^1.3.0",
     "typescript": "3.7.3"
   },
