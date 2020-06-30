@@ -1,5 +1,7 @@
 {
   "compilerOptions": {
+    "rootDir": "./",
+    "baseUrl": "./",
     "allowJs": true,
     "alwaysStrict": true,
     "esModuleInterop": true,
