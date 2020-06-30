@@ -7,7 +7,10 @@
   "extends": [
     "plugin:react/recommended",
     "standard",
-    "plugin:prettier/recommended"
+    "plugin:prettier/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:import/typescript"
   ],
   "globals": {
     "Atomics": "readonly",
@@ -25,6 +28,11 @@
   "settings": {
     "react": {
       "version": "detect"
+    },
+    "import/resolver": {
+      "node": {
+        "paths": ["."]
+      }
     }
   },
   "rules": {
